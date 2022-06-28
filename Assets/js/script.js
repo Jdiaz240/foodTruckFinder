@@ -16,5 +16,4 @@ fetch('https://maps.googleapis.com/maps/api/geocode/json?address=Washington&key=
 
 
 
-
 findTrucks.addEventListener("click",) // add modal function))
