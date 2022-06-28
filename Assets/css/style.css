@@ -4,4 +4,15 @@
     margin: 10% 35%;
 }
 
+#footer {
+    height: 10%;
+    padding: 0 35%;
+}
 
+a {
+    color: white;
+}
+
+.hide {
+    display: none;
+}
