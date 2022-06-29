@@ -100,19 +100,66 @@
                   ></button>
                 </div>
                 <div class="modal-body">
-                  <label for="site-search">Please enter your city or zipcode:</label>
-                  <input type="search" id="site-search" name="q" placeholder="City or Zipcode"/>
+                  <label for="site-search"
+                    >Please enter your city or zipcode:</label
+                  >
+                  <input
+                    type="search"
+                    id="site-search"
+                    name="q"
+                    placeholder="City or Zipcode"
+                  />
                   <div class="dropdown">
-                    <label for="type-food">What kind of food are you looking for?</label>
-                    <button id="dropdown-button"class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <label for="type-food"
+                      >What kind of food are you looking for?</label
+                    >
+                    <!-- <button
+                      id="dropdown-button"
+                      class="btn btn-secondary dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
                       Dropdown
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    </button> -->
+                    <section class="container">
+                    <label for="chinese"
+                    >Chinese</label
+                  >
+                    <input
+                      type="checkbox"
+                      name="myCheckbox"
+                      value="1"
+                      id="chinese"
+                      onclick="selectOnlyThis(this)"
+                    />
+                    <label for="american"
+                    >American</label
+                  >
+                    <input
+                      type="checkbox"
+                      name="myCheckbox"
+                      value="2"
+                      id="american"
+                      onclick="selectOnlyThis(this)"
+                    />
+                    <label for="mexican"
+                    >Mexican</label
+                  >
+                    <input
+                      type="checkbox"
+                      name="myCheckbox"
+                      value="3"
+                      id="mexican"
+                      onclick="selectOnlyThis(this)"
+                    />
+                  </section>
+                    <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                       <li><button id="drop1" class="dropdown-item drops" type="button">Chinese</button></li>
                       <li><button id="drop2" class="dropdown-item drops" type="button">Mexican</button></li>
                       <li><button id="drop3" class="dropdown-item drops" type="button">American</button></li>
                       <li><button id="drop4" class="dropdown-item drops" type="button">Indian</button></li>
-                    </ul>
+                    </ul> -->
                   </div>
                 </div>
                 <div class="modal-footer">
