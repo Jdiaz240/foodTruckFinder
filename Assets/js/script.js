@@ -8,15 +8,13 @@ var checkBoxes = document.querySelector(".check");
 var mexican = document.querySelector("#mexican");
 var american = document.querySelector("#american");
 var chinese = document.querySelector("#chinese");
-var userZip = document.getElementById('site-search')
-var submit = document.getElementById('submit')
-var cards = document.getElementById('cards')
+var userZip = document.getElementById('site-search');
+var submit = document.getElementById('submit');
+var cards = document.getElementById('cards');
+var resultsRow = document.getElementById('row1');
 
-// var isChecked = fetch(
-//   "https://maps.googleapis.com/maps/api/geocode/json?address=Washington&key=AIzaSyDFd1rcFFUqsm2rWJr8kJn_tJXP8SPzmq8"
-// )
-//   .then((response) => response.json())
-//   .then((data) => console.log(data));
+
+
 
 function foodType() {
   // var foodTypes;
