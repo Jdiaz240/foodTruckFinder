@@ -6,9 +6,7 @@ var dropDown = document.getElementById("dropdown-button");
 var myCheckbox = document.getElementsByName("myCheckbox");
 var checkBoxes = document.querySelector(".check");
 var mexican = document.querySelector("#mexican");
-console.log(mexican);
 var american = document.querySelector("#american");
-console.log(american);
 var chinese = document.querySelector("#chinese");
 var userZip = document.getElementById('site-search')
 var submit = document.getElementById('submit')
