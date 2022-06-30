@@ -29,7 +29,7 @@
         </div>
       </nav>
     </header>
-    <section>
+    <!-- <section>
       <div id="search-modal" class="modal border border-primary">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -60,7 +60,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="begin">
       <div class="card text-center">
         <div class="card-header">Food Truck Finder</div>
@@ -127,31 +127,34 @@
                     >Chinese</label
                   >
                     <input
+                      class="check"
                       type="checkbox"
                       name="myCheckbox"
-                      value="1"
+                      value="chinese"
                       id="chinese"
-                      onclick="selectOnlyThis(this)"
+                      onclick="test()"
                     />
                     <label for="american"
                     >American</label
                   >
                     <input
+                      class="check"
                       type="checkbox"
                       name="myCheckbox"
-                      value="2"
+                      value="american"
                       id="american"
-                      onclick="selectOnlyThis(this)"
+                      onclick="test()"
                     />
                     <label for="mexican"
                     >Mexican</label
                   >
                     <input
+                      class="check"
                       type="checkbox"
                       name="myCheckbox"
-                      value="3"
+                      value="mexican"
                       id="mexican"
-                      onclick="selectOnlyThis(this)"
+                      onclick="test()"
                     />
                   </section>
                     <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -178,7 +181,19 @@
         </div>
       </div>
     </section>
-
+    <aside>
+        <div id="cards" class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </aside>
     <footer>
       <nav id="footer" class="navbar fixed-bottom navbar-dark bg-dark">
         <a
