@@ -68,7 +68,7 @@ function renderData(data) {
       console.log(truck);
 
       var div1 = document.createElement("div");
-      div1.setAttribute("class", "col-lg-2 mb-4 mx-5");
+      div1.setAttribute("class", "col-lg-2 mb-5 mx-5");
 
       var div2 = document.createElement("div");
       div2.setAttribute("class", "card p-5 mt-3");
