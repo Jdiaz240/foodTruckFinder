@@ -65,20 +65,29 @@ function renderData(data) {
     var onPage = document.getElementById('row1')
     for (let i = 0; i < 10; i++) {
       let truck = results[i].name;
+      console.log(truck);
 
-      // var div1 = document.createElement("div").setAttribute("class", "col-lg-2 mb-4 mx-3");
-      // var div2 = document.createElement("div").setAttribute("class", "card p-5 mt-3");
-      // var div3 = document.createElement("div").setAttribute("class","card-body");
-      // var h5 = document.createElement("h5");
-      // h5.setAttribute("class", "card-title");
-      // h5.innerHTML = truck;
-      // div1.appendChild(div2);
-      // div2.appendChild(div3);
-      // div3.appendChild(h5);
-      // onPage.appendChild(div1);
-      // let div = document.createElement('div').setAttribute('class', 'col')
-      //   cards.append(truck)
-      //   div.textContent = '<div class h-100>\n\<div class="card-body">\n\<h5 class="card-title>' + truckName + '</h5>\n\<p>this works</p>\n\</div>\n\</div>\n\</div>\n\</div>'  
+      var div1 = document.createElement("div");
+      div1.setAttribute("class", "col-lg-2 mb-4 mx-3");
+
+      var div2 = document.createElement("div");
+      div2.setAttribute("class", "card p-5 mt-3");
+
+      var div3 = document.createElement("div");
+      div3.setAttribute("class","card-body");
+
+      var h5 = document.createElement("h5");
+      h5.setAttribute("class", "card-title");
+
+      h5.innerHTML = "Hello There";
+
+      div1.appendChild(div2);
+      div2.appendChild(div3);
+      div3.appendChild(h5);
+      onPage.appendChild(div1);
+    //   let div = document.createElement('div').setAttribute('class', 'col')
+    //     cards.append(truck)
+    //     div.textContent = '<div class h-100>\n\<div class="card-body">\n\<h5 class="card-title>' + truckName + '</h5>\n\<p>this works</p>\n\</div>\n\</div>\n\</div>\n\</div>'  
    }              
 }
 
@@ -90,5 +99,4 @@ american.addEventListener("change", foodType);
 chinese.addEventListener("change", foodType);
 
 
-// foodSelection.addEventListener('click', changeSelection)
-// findTrucks.addEventListener("click",) // add modal function)
+foodSelection.addEventListener('click', changeSelection);
