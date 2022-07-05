@@ -68,7 +68,7 @@ function renderData(data) {
       console.log(truck);
 
       var div1 = document.createElement("div");
-      div1.setAttribute("class", "col-lg-2 mb-4 mx-3");
+      div1.setAttribute("class", "col-lg-2 mb-4 mx-5");
 
       var div2 = document.createElement("div");
       div2.setAttribute("class", "card p-5 mt-3");
@@ -79,11 +79,23 @@ function renderData(data) {
       var h5 = document.createElement("h5");
       h5.setAttribute("class", "card-title");
 
-      h5.innerHTML = "Hello There";
+      h5.innerHTML = truck;
+
+      var icon = document.createElement('img');
+      var iconImage = results[i].icon;
+      icon.setAttribute('src',iconImage )
+      
+
+      var p1 = document.createElement("p");
+      p1.innerHTML = results[i].formatted_address;
+
+
 
       div1.appendChild(div2);
       div2.appendChild(div3);
       div3.appendChild(h5);
+      div3.appendChild(p1);
+      div3.appendChild(icon);
       onPage.appendChild(div1);
     //   let div = document.createElement('div').setAttribute('class', 'col')
     //     cards.append(truck)
@@ -99,4 +111,4 @@ american.addEventListener("change", foodType);
 chinese.addEventListener("change", foodType);
 
 
-foodSelection.addEventListener('click', changeSelection);
+// foodSelection.addEventListener('click', changeSelection);
